@@ -1,0 +1,22 @@
+*{
+    font-family: "Arial Unicode MS";
+  }
+  
+  .home-page{
+    text-align: center;
+    padding-top: 50px;
+    color: darkgreen;
+  }
+  
+  button{
+    background-color: darkgreen;
+    color: aliceblue;
+    border-radius: 50px;
+    font-size: 30px;
+  }
+  
+  h2{
+    padding: 30px;
+  }
+  
+  

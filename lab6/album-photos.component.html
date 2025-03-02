@@ -1,0 +1,8 @@
+<button (click)="goBack()">Go Back</button>
+<h1>Album Photos</h1>
+<div class="row">
+  <div *ngFor="let photo of photos" class="">
+    <h3>{{ photo.title }}</h3>
+    <img [src]="photo.url" alt="{{ photo.title }}" class="img-fluid">
+  </div>
+</div>
