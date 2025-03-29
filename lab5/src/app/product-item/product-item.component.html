@@ -1,0 +1,9 @@
+<!-- product-item.component.html -->
+<div class="product-item">
+    <h3>{{ product.name }}</h3>
+    <p>Price: ${{ product.price }}</p>
+    <p>Likes: {{ product.likes }}</p>
+    <button (click)="likeProduct()">Like</button>
+    <button (click)="remove.emit()">Remove</button>
+  </div>
+  

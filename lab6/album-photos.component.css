@@ -1,0 +1,18 @@
+h1{
+    color: darkgreen;
+    text-align: center;
+  }
+  
+  button{
+    background-color: darkgreen;
+    color: aliceblue;
+    border: none;
+    border-radius: 15px;
+    position: absolute;
+    margin-top: 20px;
+    font-size: 20px;
+  }
+  
+  .row{
+    text-align: center;
+  }
