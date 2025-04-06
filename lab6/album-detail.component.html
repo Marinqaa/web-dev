@@ -1,0 +1,16 @@
+<!-- album-detail.component.html -->
+
+<button (click)="goBack()" class="button" id="back">Go Back</button>
+<div class="album-detail-container" *ngIf="album">
+  <h1>{{ album.title }}</h1>
+  <p>This is an album with id {{ album.id }}</p>
+  <p> It belongs to user with id {{ album.userId }}</p>
+  
+  <div class="form-group">
+    <input type="text" [(ngModel)]="title" placeholder="Change title">
+  </div>
+  
+  <button (click)="updateAlbum()" class="button">Save</button>
+  <br style="margin-bottom: 20px;">
+  <button (click)="goPhotos()" class="button">View Photos</button>
+</div>

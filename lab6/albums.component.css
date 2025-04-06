@@ -1,0 +1,23 @@
+.album-item{
+    border: darkgreen solid 2px;
+    padding: 7px;
+    margin: 15px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: darkgreen;
+    font-family: "Arial Unicode MS" ;
+  }
+  
+  button{
+    float: right;
+    background: transparent;
+    border-color: transparent;
+    font-size: 20px;
+    margin-top: -80px;
+    margin-right:-5px;
+    color: darkgreen;
+  }
+  
+  h2:hover{
+    cursor: pointer;
+  }

@@ -1,0 +1,20 @@
+.top-bar{
+    height: 58px;
+    font-size: 13px;
+    background-color: darkgreen;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: -10px;
+  }
+  
+  a {
+    cursor: pointer;
+    text-decoration: none;
+    color: aliceblue;
+  }
+  
+  a:hover{
+    opacity: 0.7;
+  }

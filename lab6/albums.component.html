@@ -1,0 +1,7 @@
+<!-- albums.component.html-->
+<div *ngIf="albums.length > 0">
+    <br>
+    <div *ngFor="let album of albums" class="album-item">
+      <h2 [routerLink]="['/albums', album.id]">{{album.id}}. {{ album.title }}</h2>
+    </div>
+  </div>
