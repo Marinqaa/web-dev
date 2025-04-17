@@ -1,6 +1,27 @@
+# api/ views.py
 from django.http import JsonResponse, HttpResponse
 from django.core import serializers
 from .models import Company, Vacancy
+from django.shortcuts import redirect
+
+
+def home(request):
+    return redirect('/api/') 
+from django.http import JsonResponse
+
+def api_root(request):
+    return JsonResponse({
+       "message": "Welcome to the API!",
+        "endpoints": {
+            "companies": "/api/companies/",
+            "company details": "/api/companies/<int:id>/",
+            "vacancies by company": "/api/companies/<int:id>/vacancies/",
+            "vacancies": "/api/vacancies/",
+            "vacancy details": "/api/vacancies/<int:id>/",
+            "top vacancies": "/api/vacancies/top-ten/",
+        }
+    })
+    
 
 def get_companies(request):
     companies = Company.objects.all()
